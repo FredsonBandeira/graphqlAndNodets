@@ -5,21 +5,23 @@ import ListOfUsers from './Components/ListOfUsers';
 import UpdatePassword from './Components/UpdatePassword';
 
 function App() {
-  
   const client = new ApolloClient({
     uri: 'http://localhost:3001/graphql',
     cache: new InMemoryCache(),
   });
 
   return (
-    
     <ApolloProvider client={client}>
-      
-        <h1>Lista de Usuários e Criar Usuário</h1>
-       
-        <CreateUser />
+      <div className="min-h-screen bg-gray-100 p-8">
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-700">Gestão de Usuários</h1>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <CreateUser />
+          <UpdatePassword />
+        </div>
+
         <ListOfUsers />
-        <UpdatePassword/>
+      </div>
     </ApolloProvider>
   );
 }
