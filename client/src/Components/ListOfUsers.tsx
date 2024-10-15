@@ -35,7 +35,7 @@ const ListOfUsers = () => {
             <p className="text-lg text-gray-800">{user.name}</p>
             <p className="text-sm text-gray-600">{user.username}</p>
             <button
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
+            className="bg-red-500 text-white text-xs px-2 py-2 rounded hover:bg-red-600 transition"
             onClick={() => deleteUser({ variables: { id: user.id } })}
           >
             Deletar
