@@ -1,6 +1,6 @@
 # User Management App
 
-Este projeto é uma aplicação de gerenciamento de usuários desenvolvida em **React** com **Apollo Client** para interagir com uma API GraphQL. A aplicação permite criar usuários, listar todos os usuários, atualizar senhas e excluir usuários.
+Este projeto é uma aplicação de gerenciamento de usuários desenvolvida em **React** com **Apollo Client** para interagir com uma **API GraphQL**. A aplicação permite criar usuários, listar todos os usuários, atualizar senhas e excluir usuários.
 
 ## Tecnologias Utilizadas
 
